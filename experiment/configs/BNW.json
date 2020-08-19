@@ -1,0 +1,23 @@
+{
+    "path": "/share/jolivaunc/data/bayesian_network_walk/data.p",
+    "batch_size": 512,
+    "lr": 1e-3,
+    "model": {
+        "num_tasks": 10,
+        "dim": 128,
+        "num_feature_nodes": 64,
+        "feature_func":{
+            "linear_hids": [256],
+            "outsize": 256
+        },
+        "predict_relationships":{
+            "linear_hids": [256]
+        },
+        "task_network": {
+            "linear_hids": [256]
+        }
+    },
+    "iterations": 10000,
+    "valid_iters": 1000,
+    "print_iters": 100
+}
